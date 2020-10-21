@@ -1,0 +1,35 @@
+body, html {
+    height: 100vh;
+    margin:0;
+    padding:0;
+    background-image: url("https://images4.alphacoders.com/780/thumb-1920-780310.jpg");
+    background-size: cover;
+    
+    
+}
+body{
+    transition: all 1s ease-in-out;
+}
+a{
+	 color:red;
+  
+  background: rgba(33,33,33,0.3);
+  font-size: 20px;
+  border: none;
+cursor: pointer;
+border-radius:5px;
+text-decoration:none;
+    padding: 0.5em 0.01em;
+    display: block;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+p{
+font-size:40px;}
