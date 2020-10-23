@@ -3,11 +3,14 @@
   width: 95%;
   padding: 15px;
   margin: 5px 12px ;
-  background:white;
- border-color:red;	
+  background:rgb(242, 239, 230);
+ border-color:rgb(237, 215, 147);	
 }
 
-
+body{background-image: url("bg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+color: rgb(242, 239, 230);}
 
 hr {
   border: 1px solid blue;
@@ -39,12 +42,18 @@ button:hover {
 
 .cancelbtn, .signupbtn {
   float: left;
-  width: 50%;
+  width: 20%;
+  position: relative;
+  left: 240px;
 }
 
 
 .container {
   padding: 16px;
+  width: 40%;
+  position: absolute;
+  left:550px;
+  top: 100px;
 }
 
 
