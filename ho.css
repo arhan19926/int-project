@@ -2,25 +2,10 @@ body, html {
     height: 100vh;
     margin:0;
     padding:0;
-    background-image: url("jw.jpg");
-    background-size: cover;
-    
-    
+        
 }
 body{
     transition: all 1s ease-in-out;
-}
-a{
-	 color:red;
-  
-  background: rgba(33,33,33,0.3);
-  font-size: 20px;
-  border: none;
-cursor: pointer;
-border-radius:5px;
-text-decoration:none;
-    padding: 0.5em 0.01em;
-    display: block;
 }
 
 .hero-text {

@@ -1,10 +1,23 @@
 <!doctype html>
 <html>
 <head>
-
+<style type="text/css">
+.page-bg {
+  background: url('bb.png');
+ filter: blur(8px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+</style>
 <title>LOGIN</title>
 <link rel="stylesheet" type="text/css"href="login.css">
-
+<div class="page-bg"></div>
+<div class="content">
 <form action="action_page.php">
   <div class="imgcontainer">
     <img src="b.png" alt="Avatar" class="avatar">
@@ -26,6 +39,7 @@
 <span class="psw"><a href="#">Forgot Password?</a></span>
   </div>
 </form>
+</div>
 </body>
 </head>
 </html>

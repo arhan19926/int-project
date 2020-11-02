@@ -4,8 +4,10 @@
 <title>Sign Up</title>
 <link rel="stylesheet" type="text/css"href="signup.css">
 </head>
-
-<form action="action_page.php" style="border:1px solid #red">
+<body>
+  <div class="page-bg"></div>
+  <div class="content">
+  <form style="border:1px solid #red" name="reg" onsubmit="return formValidation();" action="Home.html">
   <div class="container">
     <h1 style="color:rgb(237, 215, 147);font-family: sans-serif;"><center>BRESCA Membership</center></h1>
     <p> <h3 style="color:rgb(240, 209, 113);">Please fill in this form to create an account.<h3></p>
@@ -19,19 +21,41 @@
     <input type="password" placeholder="Enter Password" name="psw" >
 
     <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" >
+    <input type="password" placeholder="Repeat Password" name="pswr" >
 
-    <label>
-     <br> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-    </label>
-
+    
     <p>By creating an account you agree to our <a href="tandc.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
     <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancel</button>
-      <button type="submit" class="signupbtn">Sign Up</button>
+     
+      <li><input type="submit" name="submit" value="Submit"  style="background-color: rgb(227, 60, 5);border-color: rgb(227, 60, 5);" ></li>
     </div>
   </div>
 </form>
-</head>
+<script>
+   
+    function formValidation()
+    { 
+    if (document.reg.email.value==""
+      ) {alert("Please Enter a valid email address");
+      document.reg.email.focus();
+    return false;
+  }
+      if (document.reg.psw.value ==""){alert("please Enter a password");
+          document.reg.psw.focus();
+          return false;
+  }
+    if(document.reg.pswr.value == '' ) {alert("please Enter the password again");
+            document.reg.pswr.focus();
+        return false;
+  } 
+if (window.confirm('Click "ok" to get redirected back to home page.')) 
+{
+window.location.replace("signup.html");
+};
+}
+
+  </script>
+  </div>
+</body>
 </html>

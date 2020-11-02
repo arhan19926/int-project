@@ -1,14 +1,10 @@
 
 form {
  position: relative;
- left: 800px;
- top: 350px;
+ left: 750px;
+ top: 300px;
 }
-body{
-  background-image: url("bb.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 input[type=text], input[type=password] {
   width: 25%;
