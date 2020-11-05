@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css"href="login.css">
 <div class="page-bg"></div>
 <div class="content">
-<form action="action_page.php">
+<form action="Home.html">
   <div class="imgcontainer">
     <img src="b.png" alt="Avatar" class="avatar">
   </div>
@@ -36,10 +36,15 @@
     </label>
   </div>
 
-<span class="psw"><a href="#">Forgot Password?</a></span>
+<span class="psw"><button onclick="myFunction()" style="width: 100px; ">Forgot Password?</button></span>
   </div>
 </form>
 </div>
+<script type="text/javascript">
+  function myFunction(){
+    alert("Your password reset link has been sent to your registered email id based on the Username you entered");
+  }
+</script>
 </body>
 </head>
 </html>
